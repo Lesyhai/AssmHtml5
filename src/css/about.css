@@ -327,7 +327,12 @@
     padding: 10px;
     text-align: center;
     border-radius: 10px;
+    transition: 1s;
  
+ }
+  .Our__Goodness__content__text:hover{
+    transform: scale(1.1);
+    transition: 1s;
  }
  .Our__Goodness__content__text  i{
     background-color: #fef2f2;
@@ -346,7 +351,7 @@
     color: #888888;
  }
  .Our__Goodness__content__text:hover  i{
-    transform: scale(1.2);
+    transform: rotateY(360deg);
     transition: .6s;
  }
 
