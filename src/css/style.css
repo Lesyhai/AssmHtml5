@@ -7,14 +7,11 @@
 html {
     scroll-behavior: smooth;
 }
-
-
 .container {
     position: relative;
     width: 1440px;
     margin: 0 auto;
-    font-family: roboto;
-    /* overflow: hidden; */
+    font-family: 'Poppins', sans-serif;
 }
 
 .menu-mobile {
