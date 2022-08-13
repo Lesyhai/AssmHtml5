@@ -104,3 +104,22 @@ var close =document.querySelector('.icon-close i').addEventListener("click",func
    menuMobile.classList.toggle("acctive")
 })
 
+
+ // run number
+
+ let valuesdisplays = document.querySelectorAll('.number');
+ let intervals = 100;
+
+ valuesdisplays.forEach((valuedisplay) => {
+  let startvalue = 0;
+  let endvalue = parseInt(valuedisplay.getAttribute('data-val'));
+
+  let duration = Math.floor(intervals / endvalue);
+  let counter = setInterval(function() {
+    startvalue += 1;
+    valuedisplay.textContent = startvalue;
+    if (startvalue == endvalue){
+      clearInterval(counter);
+    }
+  }, duration);
+ });
